@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+    <head>
+        <title>TicTacToe</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/js3t.js"></script>
+		<script type="text/javascript">
+			window.onload = function()
+			{
+			    js3t.TicTacToe();
+			}		
+		</script>
+    </head>
+    <body>
+    
+    	<!-- Settings -->
+    	<div id="js3tMenu" class="js3tBar">
+        	<label for="js3tOpponent">Opponent: </label>
+	        <select id="js3tOpponent" name="js3tOpponent">
+	        	<option value="0" selected="selected">Computer</option>
+	        	<option value="1">Human</option>
+	        </select>
+	        <label for="js3tLevel">Level:</label>
+	        <select id="js3tLevel" name="js3tLevel">
+	        	<option value="0">Easy</option>
+	        	<option value="1">Medium</option>
+	        	<option value="2" selected="selected">No chance</option>
+	        </select>
+        	<input id="js3tPlay" type="button" name="play" value="Play again" />
+        </div>
+        
+        <!-- The field -->
+        <div id="js3tField">
+        	<div id="js3tCell-0" class="js3tCell"></div>
+        	<div id="js3tCell-1" class="js3tCell"></div>
+        	<div id="js3tCell-2" class="js3tCell"></div>
+        	<div id="js3tCell-3" class="js3tCell"></div>
+        	<div id="js3tCell-4" class="js3tCell"></div>
+        	<div id="js3tCell-5" class="js3tCell"></div>
+        	<div id="js3tCell-6" class="js3tCell"></div>
+        	<div id="js3tCell-7" class="js3tCell"></div>
+        	<div id="js3tCell-8" class="js3tCell"></div>
+        </div>
+        
+        <div id="js3tStat" class="js3tBar">
+        	<p id="js3tMsg"></p>
+        </div>
+        
+    </body>
+</html>
